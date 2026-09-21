@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#225c47">
+  <title>아주대학교 중앙도서관 | 나에게 맞는 서비스 찾기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header"><a class="brand" href="./"><span class="brand-icon" data-icon="book"></span>아주대학교 중앙도서관<span class="brand-divider"></span><span class="brand-sub">서비스 가이드</span></a><a href="https://library.ajou.ac.kr/" class="help" target="_blank" rel="noopener noreferrer">도서관 홈페이지 <span>↗</span></a></header>
+  <main>
+    <section class="hero"><div class="hero-copy"><span class="eyebrow"><i></i> AJOU UNIVERSITY · 나의 도서관 가이드</span><h1>지금 나에게 필요한<br>도서관 서비스는?</h1><p>자료 찾기부터 논문 작성까지.<br>지금 상황을 알려주시면, 알맞은 서비스를 찾아드릴게요.</p><div class="hero-note"><span data-icon="check"></span> 추천은 로그인 없이 <b>·</b> 공식 안내 연결</div></div><div class="illustration" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="spark spark-one">✳</span><span class="spark spark-two">+</span><div class="float-label label-top"><span data-icon="search"></span> 발견하는 즐거움</div><div class="book-stack"><div class="plant"><i></i><i></i><i></i><span></span></div><div class="standing-book b-one"></div><div class="standing-book b-two"></div><div class="standing-book b-three"><span>LIBRARY</span></div><div class="flat-book flat-one"></div><div class="flat-book flat-two"></div></div><div class="float-label label-bottom"><span data-icon="spark"></span> 가능성이 펼쳐지는 곳</div></div></section>
+    <p class="verified-notice">아주대학교 중앙도서관의 실제 서비스를 안내합니다. 서비스 신청·예약은 연결된 공식 홈페이지에서 진행해주세요.</p>
+    <section class="finder" aria-labelledby="situation-title"><div class="section-heading"><div><span class="step">STEP 01</span><h2 id="situation-title">어떤 도움이 필요하세요?</h2><p>현재 나의 상황과 가까운 항목을 모두 선택해주세요.</p></div><span class="multi-badge">여러 개 선택 가능</span></div><div id="situations" class="situation-grid"></div><div class="selection-bar"><p id="selection-count" aria-live="polite">상황을 선택하면 추천을 시작할 수 있어요.</p><button id="recommend" class="primary" disabled>맞춤 서비스 찾기 <span>→</span></button></div></section>
+    <section id="results" class="results" hidden aria-labelledby="result-title"><div class="section-heading"><div><span class="step">STEP 02</span><h2 id="result-title" tabindex="-1">나에게 맞는 추천 서비스</h2><p id="result-description"></p></div><button class="text-button" id="reset">선택 초기화 ↺</button></div><div id="result-grid" class="result-grid"></div><p class="availability">2026.09.09 공식 안내 확인 · 이용 자격은 서비스마다 다릅니다. 상세 안내에서 본인에게 해당하는 조건을 확인해주세요.</p></section>
+    <section class="how" id="how"><div class="how-title"><span data-icon="compass"></span><h2>도서관, 이렇게 활용해보세요</h2><p>필요한 순간, 더 가까이.</p></div><div class="how-item"><span>01</span><h3>나의 상황 선택</h3><p>지금 필요한 도움을 골라주세요.</p></div><div class="how-item"><span>02</span><h3>맞춤 서비스 확인</h3><p>선택한 상황에 맞는 서비스를 살펴보세요.</p></div><div class="how-item"><span>03</span><h3>이용 방법 알아보기</h3><p>준비사항을 확인하고 도서관에서 시작하세요.</p></div></section>
+    <aside class="contact"><span class="contact-icon" data-icon="message"></span><div><h3>어떤 서비스를 골라야 할지 고민되나요?</h3><p><a href="https://library.ajou.ac.kr/guide/bulletins/faq" target="_blank" rel="noopener noreferrer">중앙도서관 FAQ / 문의 및 건의 ↗</a> · <a href="https://library.ajou.ac.kr/guide/bulletins/contact" target="_blank" rel="noopener noreferrer">서비스별 연락처 ↗</a></p></div><span class="contact-decoration" aria-hidden="true">↗</span></aside>
+  </main><footer><span class="footer-brand">아주대학교 중앙도서관</span><span>당신의 배움에, 도서관이 함께합니다.</span><span>공식 홈페이지를 참고한 서비스 탐색 가이드</span></footer>
+  <dialog id="detail"><div class="dialog-top"><span class="eyebrow">LIBRARY SERVICE</span><button id="close-dialog" aria-label="상세 안내 닫기">×</button></div><div id="dialog-content"></div><button class="primary dialog-done" id="dialog-done">확인했어요</button></dialog>
+  <script src="library-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
